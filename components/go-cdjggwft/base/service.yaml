@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: go-cdjggwft
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: go-cdjggwft 
+  name: go-cdjggwft
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: go-cdjggwft 
